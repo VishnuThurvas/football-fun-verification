@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /debug.php
+Disallow: /debug
 Disallow: /admin/dashboard
 # Note: Security audit scheduled for next week
