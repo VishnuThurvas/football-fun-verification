@@ -1,15 +1,19 @@
 import { Routes, Route } from "react-router-dom";
+
+import Index from "./pages/Index";
+import AdminVerify from "./pages/AdminVerify";
+import AdminDashboard from "./pages/AdminDashboard";
 import Debug from "./pages/Debug";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<div>Home Page</div>} />
-      <Route path="/admin" element={<div>Admin Page</div>} />
-      <Route path="/admin/dashboard" element={<div>Dashboard</div>} />
-
-      {/* DEBUG ROUTE */}
+      <Route path="/" element={<Index />} />
+      <Route path="/admin" element={<AdminVerify />} />
+      <Route path="/admin/dashboard" element={<AdminDashboard />} />
       <Route path="/debug" element={<Debug />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
