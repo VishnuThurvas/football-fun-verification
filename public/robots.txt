@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: /debug
 Disallow: /admin/dashboard
 # Note: Security audit scheduled for next week
+
+Why Not Find out yourself, its too predictable.
